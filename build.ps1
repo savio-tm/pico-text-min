@@ -25,8 +25,11 @@ if ($Setup) {
 Invoke-Unity @('-executeMethod', 'TextMin.Apk') (Join-Path $project 'Build\build.log')
 Write-Host ("Built in {0:m\:ss}" -f $clock.Elapsed)
 if ($Install) {
+    # the headset drops off adb while it sleeps during a build: wait for it, and retry once
+    adb wait-for-device
     adb install -r (Join-Path $project 'Build\TextMin.apk')
-    if ($LASTEXITCODE -ne 0) { throw 'adb install failed' }
+    if ($LASTEXITCODE -ne 0) { adb wait-for-device; adb install -r (Join-Path $project 'Build\TextMin.apk') }
+    if ($LASTEXITCODE -ne 0) { throw 'adb install failed (is the headset connected and awake?)' }
     adb shell am force-stop com.vibelab.textmin
     adb shell monkey -p com.vibelab.textmin -c android.intent.category.LAUNCHER 1 | Out-Null
     Write-Host ("Installed and launched in {0:m\:ss}" -f $clock.Elapsed)

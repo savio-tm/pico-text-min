@@ -15,14 +15,23 @@ MonoBehaviour:
   PrefabLookUps: []
   TextureLookUps: []
   MaterialLookUps:
+  - resource: {fileID: 2636440414268184591, guid: a7d71eaa0c530ec43bd3d067b569b01b, type: 2}
+    path: SpatialAdapterExport\Assets\Fonts\LiberationSans Bitmap.asset.glb
+  - resource: {fileID: 980464560850131437, guid: e772bf282747958468426e64cb8d6733, type: 2}
+    path: SpatialAdapterExport\Assets\Fonts\LiberationSans Made SDF.asset.glb
+  - resource: {fileID: 2100000, guid: 0e2940050a877824b8c34a81f170a443, type: 2}
+    path: SpatialAdapterExport\Assets\Shaders\LiberationSans Made SDF Cutout.mat.glb
+  - resource: {fileID: 2103686, guid: c41005c129ba4d66911b75229fd70b45, type: 2}
+    path: SpatialAdapterExport\Assets\TextMesh Pro\Resources\Sprite Assets\EmojiOne.asset.glb
   - resource: {fileID: 2180264, guid: 2e498d1c8094910479dc3e1b768306a4, type: 2}
     path: SpatialAdapterExport\Assets\TextMesh Pro\Resources\Fonts & Materials\LiberationSans
       SDF - Fallback.asset.glb
   - resource: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
     path: SpatialAdapterExport\Assets\TextMesh Pro\Resources\Fonts & Materials\LiberationSans
       SDF.asset.glb
-  - resource: {fileID: 2103686, guid: c41005c129ba4d66911b75229fd70b45, type: 2}
-    path: SpatialAdapterExport\Assets\TextMesh Pro\Resources\Sprite Assets\EmojiOne.asset.glb
+  - resource: {fileID: 5083544872417632003, guid: 1ccc60eb273206d46a9f9224bf324bfa, type: 2}
+    path: SpatialAdapterExport\Assets\TextMesh Pro\Resources\Fonts & Materials\LiberationSans
+      Made SDF.asset.glb
   - resource: {fileID: 2100000, guid: e73a58f6e2794ae7b1b7e50b7fb811b0, type: 2}
     path: SpatialAdapterExport\Assets\TextMesh Pro\Resources\Fonts & Materials\LiberationSans
       SDF - Drop Shadow.mat.glb
